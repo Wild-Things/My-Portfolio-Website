@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    background-color: rgb(233, 233, 233);
+}
+
+p, h2, header, a {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+nav li a {
+    color: white;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    background-color: rgb(121, 121, 121);
+    align-items: center;
+    width: cover;
+    background-image: url(../img/Space-Banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.head {
+    color: white;
+    background-color: rgb(41, 41, 41);
+    border-radius: 0 5px 5px 0;
+    padding: 2px;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(122, 1, 1);
+    border
+}
+
+.nav li {
+    list-style-type: none;
+    padding: 1%;
+}
+
+
+.splash {
+    height: 200px;
+   
+}
+
+.sr1 .sr2 .sr3 .sr4 .sr5 {
+    opacity: 0;
+}
+
+.sr1 {
+    height: 50%;
+    width: 100%;
+    background-image: url(../img/Scratch.png);
+    border: 6px solid rgb(0, 87, 168);  
+
+}
+
+.sr2 {
+    background-image: url(../img/Horiseon.png);
+}
+
+.sr3 {
+    background-image: url(../img/Prework.png);
+    
+}
+
+.sr2, .sr3, .sr4, .sr5 {
+    border: 4px solid rgb(43, 140, 231);
+    margin: 1px;
+    width: 50%;
+    height: 10%;
+}
+
+.sr2, .sr4 {
+justify-content: flex-start;
+}
+
+.sr3, .sr5 {
+justify-content: flex-end;
+}
+
+.about-me  {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    text-align: start;
+}
+
+
+.about-me-para {
+    width: 80%;
+    margin-left: 1%;
+}
+
+.about-me-heading {
+    padding: 1%;
+    border-right: 2px black solid; 
+}
+
+.work  {
+    display: flex;
+    flex-wrap: wrap;
+    Margin: 1%;
+}
+
+.work-head-2{
+    padding: 1%;
+    margin-left: 8%;
+    border-right: 2px solid black;
+}
+
+.work-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    width: 60%;
+}
+
+.work-portfolio .sr1 p {
+    display: inline-flex;
+    position: relative;
+    color: white;
+    position: relative;
+    margin-top: 60%;
+    border: 4px solid rgb(43, 140, 231);
+    background-color:rgb(43, 140, 231);
+    padding: 1%;
+    border-radius: 0 8px 8px 0;
+}
+
+.work-portfolio .sr2 p, .sr3 p, .sr4 p, .sr5 p {
+    display: inline-flex;
+    position: relative;
+    color: white;
+    position: relative;
+    margin-top: 20%;
+    border: 4px solid rgb(43, 140, 231);
+    background-color: rgb(43, 140, 231);
+    padding: 1%;
+    border-radius: 0 8px 8px 0;
+}
+
+.contact {
+    align-content: center;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 20px;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+}
+
+.contactli {
+    width: 80%;
+    align-content: center;
+    justify-content: space-around;
+    display: flex;
+    list-style-type: none;
+}
+
+.contact-header {  
+    font-size: 30px;
+    margin: auto;
+}
+
+.contactli div {
+    margin: auto;
+}
+
+.contactli a{
+    font-size: 30px;
+    color: rgb(0, 4, 255);
+}
+
+
+.sr1 .sr2 .sr3 .sr4 .sr5:hover {
+    opacity: 1;
+}
