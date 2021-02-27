@@ -17,9 +17,17 @@ nav li a {
     color: white;
 }
 
-header{
+.work, .work-head-2, .about-me, .contact, .about-me-heading, .nav, header, .contactli, .work-portfolio {
     display: flex;
     flex-wrap: wrap;
+}
+
+.main-tile, .sm-tile {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+header{
     height: 100px;
     background-color: rgb(121, 121, 121);
     align-items: center;
@@ -37,10 +45,8 @@ header{
 }
 
 .nav {
-    display: flex;
     justify-content: flex-end;
     background-color: rgb(122, 1, 1);
-    border
 }
 
 .nav li {
@@ -50,127 +56,116 @@ header{
 
 
 .splash {
-    height: 200px;
-   
-}
-
-.sr1 .sr2 .sr3 .sr4 .sr5 {
-    opacity: 0;
-}
-
-.sr1 {
-    height: 50%;
-    width: 100%;
-    background-image: url(../img/Scratch.png);
-    border: 6px solid rgb(0, 87, 168);  
-
-}
-
-.sr2 {
-    background-image: url(../img/Horiseon.png);
-}
-
-.sr3 {
-    background-image: url(../img/Prework.png);
-    
-}
-
-.sr2, .sr3, .sr4, .sr5 {
-    border: 4px solid rgb(43, 140, 231);
-    margin: 1px;
-    width: 50%;
-    height: 10%;
-}
-
-.sr2, .sr4 {
-justify-content: flex-start;
-}
-
-.sr3, .sr5 {
-justify-content: flex-end;
+    height: 200px; 
 }
 
 .about-me  {
-    display: flex;
-    flex-wrap: wrap;
     padding: 1%;
     justify-content: center;
     border-bottom: 1px solid black;
-    text-align: start;
-}
-
-
-.about-me-para {
-    width: 80%;
-    margin-left: 1%;
 }
 
 .about-me-heading {
+    flex: 0 0 10%;
+    justify-content: flex-end;
     padding: 1%;
     border-right: 2px black solid; 
 }
 
-.work  {
-    display: flex;
-    flex-wrap: wrap;
-    Margin: 1%;
+.about-me-para {
+    flex: 0 0 80%;
+    margin-left: 1%;
 }
 
-.work-head-2{
+.work {
     padding: 1%;
-    margin-left: 8%;
-    border-right: 2px solid black;
+    justify-content: center;
+}
+
+.work-head-2 {
+    flex: 0 0 10%;
+    justify-content: flex-end;
+    border-right: 2px black solid;
+    padding: 1%;
 }
 
 .work-portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1%;
-    width: 60%;
+    flex: 0 0 80%;
+    margin-left: 1%;
+    min-width: 150px;
+    min-height: 150px;  
+    justify-content: space-between;
 }
 
-.work-portfolio .sr1 p {
-    display: inline-flex;
-    position: relative;
-    color: white;
-    position: relative;
-    margin-top: 60%;
-    border: 4px solid rgb(43, 140, 231);
-    background-color:rgb(43, 140, 231);
-    padding: 1%;
-    border-radius: 0 8px 8px 0;
+
+.work-portfolio section {
+    opacity: 30%;
 }
 
-.work-portfolio .sr2 p, .sr3 p, .sr4 p, .sr5 p {
+.main-tile {
+    width: 100%;
+}
+
+.sm-tile {
+    width: 49%;
+}
+
+.sr1, .sr2, .sr3, .sr4, .sr5 {
+    border: 3px solid rgb(0, 0, 99)
+}
+
+.sr1 {
+    flex: 0 0 100%;
+    min-height: 400px;
+    background-image: url(../img/Horiseon.png);
+}
+
+.sr2, .sr3, .sr4, .sr5 {
+    flex: 0 0 100%;
+    min-height: 200px;
+    margin-top: 4px;
+}
+
+.sr2 {
+    background-image: url(../img/Prework.png);
+}
+
+.sr3 {
+    background-image: url(../img/Scratch.png)
+}
+
+.sr4 {
+    background-image: url(../img/Horiseon.png);
+}
+
+.sr5 {
+    background-image: url(../img/Horiseon.png);
+}
+
+.work-portfolio section div div p {
     display: inline-flex;
     position: relative;
-    color: white;
-    position: relative;
-    margin-top: 20%;
-    border: 4px solid rgb(43, 140, 231);
-    background-color: rgb(43, 140, 231);
     padding: 1%;
-    border-radius: 0 8px 8px 0;
+    border-radius: 0 5px 5px 0;
+    margin-top: 40%;
+    margin-bottom: 1%;
+    background-color: rgb(0, 181, 212);
 }
 
 .contact {
     align-content: center;
     height: 100%;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin: auto;
+    margin-top: 100px;
     margin-bottom: 20px;
     border-top: 1px black solid;
     border-bottom: 1px black solid;
 }
 
 .contactli {
-    width: 80%;
-    align-content: center;
-    justify-content: space-around;
-    display: flex;
-    list-style-type: none;
+    flex: 0 0 80%;
+    justify-content: space-around; 
 }
 
 .contact-header {  
@@ -187,7 +182,42 @@ justify-content: flex-end;
     color: rgb(0, 4, 255);
 }
 
+@media screen and (max-width: 600px) {
+    .contactli, .contact-header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactli {
+        margin-left: 1%;
+    }
+    .about-me-heading {
+        border-right: none;
+        flex: 0 0 30%;
+        text-decoration: underline;
+    }
+    .work-head-2 {
+        border-right: none;
+        flex: 0 0 18%;
+        text-decoration: underline;
+    }
+}
 
-.sr1 .sr2 .sr3 .sr4 .sr5:hover {
-    opacity: 1;
+@media screen and (max-width: 900px) {
+    .contact {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .contact {
+        justify-content: center;
+    }
+    
+}
+    
+
+.work-portfolio section:hover {
+    opacity: 100%;
+    transition: 500ms;
 }
