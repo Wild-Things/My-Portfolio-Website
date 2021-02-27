@@ -31,7 +31,7 @@ The website is to demonstrate a couple of things:
 ## Screenshot
 
 * Full Page
-![Finished-product](./img/This-Website.png)
+![Finished-product](img/This-Website.png)
 
 
 
