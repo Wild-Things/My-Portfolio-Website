@@ -11,6 +11,7 @@ body {
 p, h2, header, a {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
+    text-decoration: none;
 }
 
 nav li a {
@@ -135,7 +136,7 @@ header{
 }
 
 .sr4 {
-    background-image: url(../img/Horiseon.png);
+    background-image: url(../img/This-Website.png);
 }
 
 .sr5 {
@@ -150,6 +151,10 @@ header{
     margin-top: 40%;
     margin-bottom: 1%;
     background-color: rgb(0, 181, 212);
+}
+
+.work-portfolio section div div p a {
+    color: white
 }
 
 .contact {
